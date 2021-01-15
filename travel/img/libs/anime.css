@@ -1,0 +1,33 @@
+.block {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: green;
+    top: 0;
+    animation-name: moveForward;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.block:hover {
+    animation-play-state: paused;
+
+}
+
+@keyframes moveForward {
+    0% {
+        left: 0;
+    }
+    25% {
+        top:100px;
+        background-color: chocolate;
+    }
+    70%{
+        top:0:
+    }
+    100%{
+        left: 50%;
+    }
+}
